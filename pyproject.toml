@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iam-joiner-mover-leaver"
+version = "0.1.0"
+description = "IAM Governance Lifecycle Simulator for enterprise identity management"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "Solution Architect", email = "architect@company.com"}
+]
+keywords = ["iam", "identity-management", "lifecycle", "governance", "rbac"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Information Technology",
+    "Topic :: System :: Systems Administration :: Authentication/Logon",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "pydantic>=2.0",
+    "python-dateutil>=2.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=23.0",
+    "flake8>=6.0",
+    "mypy>=1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-org/iam-joiner-mover-leaver"
+Documentation = "https://docs.example.com/iam"
+Repository = "https://github.com/your-org/iam-joiner-mover-leaver.git"
+
+[tool.setuptools]
+py-modules = ["iam_simulator"]
+packages = ["iam_simulator"]
